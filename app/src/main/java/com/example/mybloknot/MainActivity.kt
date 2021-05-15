@@ -4,11 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.mybloknot.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var bindingClassMain: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        bindingClassMain = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bindingClassMain.root)
     }
 
     fun onClickNew(view: View) {
