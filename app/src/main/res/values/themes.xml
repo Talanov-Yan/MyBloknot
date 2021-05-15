@@ -12,5 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>  <!-- убирает самую верхнюю линию "статусбар"  -->
+        <item name="windowNoTitle">true</item> <!--убираем название приложения на экране -->
+        <item name="windowActionBar">false</item>  <!--убираем место где должно быть написано название приложения -->
     </style>
 </resources>
